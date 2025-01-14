@@ -57,7 +57,7 @@
     $address = mysqli_real_escape_string($connection,$_POST['address']);
 
     $query = "INSERT INTO user (name, email, contact_no, adress)
-                VALUES ('$name', '$email', '$contact', '$address')";;
+                VALUES ('$name', '$email', '$contact', '$address')";
     if(mysqli_query($connection,$query)){
         header('location: http://localhost/php_crud');
     } else{
